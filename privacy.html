@@ -18,10 +18,11 @@
 
   <h2>The short version</h2>
   <ul>
-    <li>No account, no ads, no tracking, no analytics.</li>
-    <li>The app talks directly to your TV on your home network. Nothing about your TVs, your use of the app or your
+    <li>No account, no ads, no tracking.</li>
+    <li>The app talks directly to your TV on your home network. Nothing about your TVs, what you do with them or your
     photos is sent to us or to anyone else.</li>
-    <li>Subscriptions are handled entirely by Apple. The app uses no third-party services.</li>
+    <li>Payments are handled by Apple. To understand how subscriptions perform, the app sends subscription and basic
+    usage analytics to Adapty, a subscription analytics service. These are not linked to your name or Apple Account.</li>
   </ul>
 
   <h2>Information that stays on your device</h2>
@@ -58,14 +59,32 @@
 
   <h2>Subscriptions</h2>
   <p>Payments, renewals and refunds are handled by Apple. We don't receive your name, e-mail, payment details or
-  Apple Account. The app checks whether your subscription is active using Apple's StoreKit on your iPhone; this
-  information is not sent to us.</p>
+  Apple Account. The app checks whether your subscription is active using Apple's StoreKit on your iPhone.</p>
+
+  <h2>Subscription analytics (Adapty)</h2>
+  <p>The app uses the Adapty SDK, provided by Adapty Tech Inc., to measure subscriptions: how many people start a
+  trial or subscription, renew or cancel, and in which countries. Adapty only observes purchases; it doesn't handle
+  payments. It receives:</p>
+  <ul>
+    <li>A random identifier created for this installation of the app, and Apple's identifier for vendors (IDFV).
+    The advertising identifier (IDFA) is not collected.</li>
+    <li>Subscription purchases, renewals and cancellations: the product, price, currency, dates and Apple's transaction
+    identifiers.</li>
+    <li>Basic usage events, such as when the app is opened.</li>
+    <li>Device and app details: device model, iOS version, app version, language, App Store country and IP address,
+    which is used to estimate your country. If you installed the app from an Apple Search Ads ad, the attribution
+    token Apple provides for that install.</li>
+  </ul>
+  <p>This information is not linked to your name, e-mail or Apple Account, and it is not used to track you or to show
+  ads. Adapty processes it on our behalf under its own
+  <a href="https://adapty.io/privacy">privacy policy</a> and keeps it for as long as needed to provide these
+  statistics. It never includes anything about your TVs, what you do with them or your photos.</p>
 
   <h2>What we don't do</h2>
   <ul>
     <li>We don't track you across apps or websites, and we don't show ads.</li>
-    <li>We don't sell or share personal information.</li>
-    <li>We don't use analytics, crash-reporting, advertising or subscription SDKs.</li>
+    <li>We don't sell personal information.</li>
+    <li>We don't use advertising or crash-reporting SDKs.</li>
   </ul>
 
   <h2>Children</h2>
@@ -73,8 +92,9 @@
   children.</p>
 
   <h2>Your rights</h2>
-  <p>Because we don't receive or hold information about you, there is no personal data on our side to access or
-  delete. Depending on where you live (for example under the GDPR or Turkey's KVKK) you have rights over personal
+  <p>The only information about you held outside your iPhone is the subscription analytics described above, which is
+  not linked to your identity. If you want it deleted, contact us and we'll ask Adapty to delete the data for your
+  installation. Depending on where you live (for example under the GDPR or Turkey's KVKK) you have rights over personal
   data; contact us at the address below with any question. Data on your iPhone can be deleted by you at any time,
   as described above.</p>
 
